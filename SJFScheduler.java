@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 public class SJFScheduler{
   private List<process> readyQue = new CopyOnWriteArrayList<>();
-  private ExecutorService runningThrad = Executors.newSingleThreadExecutor();
+  private ExecutorService runningThread = Executors.newSingleThreadExecutor();
 
   void insert(process p){
     readyQue.add(p);
