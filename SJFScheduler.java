@@ -43,13 +43,13 @@ public class SJFScheduler{
                 sleep(1000);
                 p.remainTime--;
                 if(p.remainTime==0) readyQue.removeIf(j->j.remainTime==0);
-            }
           }
-      }
-      runningThread.shutdownNow();
-      System.exit(0);
-    });
-  }
+        }
+    }
+    runningThread.shutdownNow();
+    System.exit(0);
+  });
+}
 
   public static main(String args[]){
     SJFScheduler sch = new SJFScheduler();
