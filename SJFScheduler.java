@@ -1,7 +1,3 @@
-package exam;
-
-import exam.process;
-import exam.SJFScheduler;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ExecutorService;
